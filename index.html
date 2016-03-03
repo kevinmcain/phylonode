@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<style>
+</style>
+
+<head>
+<body ng-app="app" ng-controller="Controller as ctrl" ng-init="getNewickFromS3BucketViaNode()">
+
+<center>
+	
+	<!--<div ng-view=""></div>-->
+	<div id="svgCanvas"></div>
+	<div style="width: 80%; margin-top:2%;">
+		<pre><code>{{newick}}<code></pre>
+	</div>
+	
+</center>
+		
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="angular.min.js"></script>
+<script src="angular-route.min.js"></script>
+<script src="app.js"></script>
+<script src="controller.js"></script>
+<script src="raphael-min.js" ></script>
+<script src="jsphylosvg-min.js"></script>
+	
+</body>
+</html>
