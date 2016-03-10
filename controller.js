@@ -27,14 +27,24 @@
 					
 					$scope.newick =  JSON.stringify(data, undefined, 2);
 					
-					var dataObject = { newick: data };
-
+					var dataObject = { 
+										newick: data
+									};
+					
+					Smits.PhyloCanvas.Render.Style.line.stroke = 'rgb(31,73,125)';
+					Smits.PhyloCanvas.Render.Style.line["stroke-width"] = 2;
+					Smits.PhyloCanvas.Render.Style.line.stroke = '#F87217';
+					Smits.PhyloCanvas.Render.Style.text["font-family"] = 'Verdana';
+					Smits.PhyloCanvas.Render.Style.text["font-size"] = 12;
+					Smits.PhyloCanvas.Render.Style.text.fill = '#3090C7';
+	
 					phylocanvas = new Smits.PhyloCanvas(
 						dataObject,
 						'svgCanvas',
 						333, 500
 						//,'circular'
 					);
+
 
 				});
 			};
